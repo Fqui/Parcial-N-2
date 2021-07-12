@@ -1,0 +1,107 @@
+* {
+    padding: 5px;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header header"
+                        "nav contenido contenido contenido"
+                        "video video video audio"
+                        "footer footer footer footer";
+}
+
+.header {
+    background-color: black;
+    padding: 10px 35px;
+    grid-area: header;
+}
+
+.logo {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+}
+
+.titulo {
+    color: #939393;
+    font-size: 30px;
+    padding: 5px 10px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    grid-area: nav;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: #3b3b3b;
+    padding: 10px 20px 10px 5px;
+    margin-top: 15px;
+    margin-bottom: 40px; 
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
+.contenido {
+    grid-area: contenido;
+}
+
+.img-box {
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    size: auto;
+    grid-area: video;
+	justify-content: center;
+}
+
+.audio {
+    border-radius: 30px;
+    display: inline-flexbox;
+    text-align: center;
+    background-color: black;
+    grid-area: audio;
+    color: white;
+    padding: 30px 20px;
+}
+
+.text-audio {
+    padding: 20px 50px;
+}
+
+.footer {
+    background-color: black;
+    grid-area: footer;
+}
